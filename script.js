@@ -1,7 +1,5 @@
-const line = document.getElementById("line");
-let rotation = 0;
+// Get the line element by its ID
+var line = document.getElementById("line");
 
-setInterval (() =>{
-	rotation += 5;
-	line.style.transform = 'translate(-50%, -50%) rotate (${rotation})deg)';
-}, 50);
+// Add the revolving animation class to the line
+line.classList.add("revolving-line");

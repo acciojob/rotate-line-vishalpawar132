@@ -1,12 +1,23 @@
-#line{
-	width:200px;
-	height:2px;
-	display: block-inline;
-	background-color: black;
-	position: absolute;
-	top:30%;
-	left: 30%;
+#line {
+  width: 200px;
+  height: 2px;
+  display: block-inline;
+  background-color: black;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
 
-	transform: translate(-50%, -50%);
-	
+.revolving-line {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
