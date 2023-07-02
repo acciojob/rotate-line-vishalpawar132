@@ -1,16 +1,12 @@
-#line {
-  width: 200px;
-  height: 2px;
-  position: absolute;
-  background-color: black;
-  animation: rotateLine 2s infinite linear;
-}
+#line{
+	width:200px;
+	height:2px;
+	display: block-inline;
+	background-color: black;
+	position: absolute;
+	top:30%;
+	left: 30%;
 
-@keyframes rotateLine {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	transform: translate(-50%, -50%);
+	
 }
