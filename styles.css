@@ -1,23 +1,16 @@
 #line {
-  width: 200px;
-  height: 2px;
-  display: block-inline;
-  background-color: black;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+	position:absolute;
+	top:200px;
+	left:100px;
+	background-color: black;
+	height:2px;
+	width:200px;
+	animation-name: circularRotation;
+	animation-duration: 3s;
+	animation-iteration-count:infinite;
 }
-
-.revolving-line {
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
+ @keyframes circularRotation{
+	100% {
+		transform:rotate(360deg);
+ }
+ }
